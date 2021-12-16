@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <img src="./assets/icon/1.png"  (click)="retour()" /> 
+    <ion-title style="text-align: center; font-style:italic; font-size: 20pt;">  Importer   </ion-title>
+  </ion-toolbar>
+</ion-header>
+ <ion-content [fullscreen]="true" style="text-align: center;"  >  
+   
+   <ion-item>
+    <img src="./assets/icon/xml.png"/>   
+   
+    <input   type="file"   name="file" #inputfile  id="file"  (change)="uploadFile($event.target.files)"  class="fileInput"/>
+     <label for="file"><ion-icon name="document"></ion-icon> Ficheir </label>
+   
+
+  </ion-item> 
+  
+  </ion-content>  

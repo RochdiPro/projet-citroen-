@@ -1,0 +1,10 @@
+{
+  "name": "inv",
+  "integrations": {
+    "capacitor": {
+      "enabled": false
+    },
+    "cordova": {}
+  },
+  "type": "angular"
+}

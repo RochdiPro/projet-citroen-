@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+      <img src="./assets/icon/1.png" (click)="retour()"/>  
+    <ion-title style="text-align: center; font-style:italic; font-size: 20pt;">  Menu   </ion-title>
+  </ion-toolbar>
+</ion-header>
+   
+
+<ion-content [fullscreen]="true" style="text-align: center;"  > 
+  <ion-card>    
+      <img src="./assets/icon/lire.png"/>  
+    <ion-card-header>           
+      <ion-button  (click)="lecture()"   color="light" expand="full" ><ion-icon name="barcode"  ></ion-icon> Lecture </ion-button>  
+    </ion-card-header>      
+  </ion-card>
+
+  <!-- <ion-card>
+    
+    <ion-card-header>     
+        <img src="./assets/icon/note.png"/> 
+    
+     <ion-button  (click)="lister()"   color="light" expand="full" ><ion-icon name="clipboard"  ></ion-icon> Lister </ion-button>  
+
+    </ion-card-header>  
+  
+  </ion-card> -->
+
+  <ion-card>
+    <ion-card-header> 
+      <img src="./assets/icon/config.png"/>   
+      
+      <ion-button  (click)="config()"   color="light" expand="full" ><ion-icon name="construct"  ></ion-icon> Configuration </ion-button>  
+
+    </ion-card-header>  
+    
+  </ion-card>
+  
+  <ion-card>
+    <ion-card-header>     
+       <img src="./assets/icon/export.png"/> 
+      
+     <ion-button  (click)="exporter()"   color="light" expand="full" ><ion-icon name="copy"  ></ion-icon> Exporter </ion-button>  
+
+    </ion-card-header>  
+    
+  </ion-card>
+
+  <ion-card>
+    <img src="./assets/icon/reset.png"/>
+    <ion-card-header>     
+      <ion-button  (click)="reset()"   color="light" expand="full" ><ion-icon name="git-compare-outline"></ion-icon>Réinitialiser </ion-button>   
+  
+    </ion-card-header>  
+  </ion-card>
+  <ion-button  (click)="crack()"   color="light" expand="full" *ngIf="test"> crack </ion-button>   
+
+</ion-content>  

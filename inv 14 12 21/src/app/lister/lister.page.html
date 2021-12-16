@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+     <img src="./assets/icon/1.png"  (click)="retour()" /> 
+   </ion-toolbar>
+</ion-header>
+
+ 
+  <ion-content> 
+    <ion-grid class="ion-text-center">
+  
+      <ion-row class="ion-margin">
+        <ion-col>
+          <ion-title>
+            <ion-text color="default"> Liste des inventaires  </ion-text>
+          </ion-title>
+        </ion-col>
+      </ion-row>
+  
+      <ion-row class="header-row">
+        <ion-col size="5" >
+          <ion-text>Code à barres </ion-text>
+        </ion-col>
+  
+        <ion-col size="5">
+          <ion-text>Code</ion-text>
+        </ion-col>
+  
+        <ion-col size="2">
+          <ion-text>Qte </ion-text>
+        </ion-col>
+      </ion-row>
+  
+  
+      <ion-row  *ngFor="let note of liste2">
+        <ion-col  size="5">
+          <ion-text>   {{note.Code}} </ion-text>
+        </ion-col>
+  
+          <ion-col size="5">
+            <ion-text> {{note.Description}}  </ion-text>
+          </ion-col> 
+    
+          <ion-col  size="2">
+            <ion-text> {{note.Quantite}}   </ion-text>
+          </ion-col>
+      </ion-row>  
+
+      <ion-row  *ngFor="let note of liste3">
+        <ion-col  size="5">
+          <ion-text>   {{note.Code}} </ion-text>
+        </ion-col>
+  
+          <ion-col size="5">
+            <ion-text> {{note.Description}}  </ion-text>
+          </ion-col> 
+    
+          <ion-col  size="2">
+            <ion-text> {{note.Quantite}}   </ion-text>
+          </ion-col>
+      </ion-row>  
+      <ion-row  *ngFor="let note of liste4">
+        <ion-col  size="5">
+          <ion-text>   {{note.Code}} </ion-text>
+        </ion-col>
+  
+          <ion-col size="5">
+            <ion-text> {{note.Description}}  </ion-text>
+          </ion-col> 
+    
+          <ion-col  size="2">
+            <ion-text> {{note.Quantite}}   </ion-text>
+          </ion-col>
+      </ion-row>  
+     
+    </ion-grid>
+
+    
+  </ion-content> 
+
+  

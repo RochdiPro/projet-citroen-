@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+   <img src="./assets/icon/1.png" (click)="retour()"/> 
+    <ion-title style="text-align: center; font-style:italic; font-size: 20pt;">  Exporter   </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="text-align: center;"  >  
+ 
+
+  <!-- <ion-card>
+    <img src="./assets/icon/pdf.png"/>
+    <ion-card-header>     
+      
+      <ion-button  (click)="createPdf()"   color="light" expand="full" ><ion-icon name="document"  ></ion-icon> Exporter PDF </ion-button>
+  
+    </ion-card-header>     
+  </ion-card> -->
+  
+  <ion-card>
+    <img src="./assets/icon/csv.png"/>
+    <ion-card-header>     
+      <ion-button  (click)="exportCSV()"   color="light" expand="full" ><ion-icon name="document"  ></ion-icon> Exporter CSV </ion-button>   
+  
+    </ion-card-header>  
+  </ion-card>
+  
+  </ion-content>  

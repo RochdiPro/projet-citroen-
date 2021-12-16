@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+     <img src="./assets/icon/1.png"  (click)="retour()"/> 
+    <ion-title style="text-align: center; font-style:italic; font-size: 20pt;">  Configuration   </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" style="text-align: center;"  >  
+  
+<ion-card>
+  <img src="./assets/icon/add.png"/>
+   <ion-card-header>     
+    <ion-button  (click)="AjouterCode()"   color="light" expand="full" ><ion-icon name="brush"  ></ion-icon> Ajouter un Article </ion-button>
+  </ion-card-header>     
+</ion-card>
+
+<ion-card>
+  <img src="./assets/icon/remove.png"/>
+  <ion-card-header>     
+    <ion-button  (click)="SupprimerCode()"   color="light" expand="full" ><ion-icon name="trash"  ></ion-icon> Supprimer un Article </ion-button>   
+
+  </ion-card-header>  
+</ion-card>
+
+<ion-card>
+  <img src="./assets/icon/updated.png"/>
+  <ion-card-header>     
+    <ion-button  (click)="ModifierCode()"   color="light" expand="full" ><ion-icon name="eyedrop-outline"  ></ion-icon> Modifier un Article </ion-button>   
+     
+  </ion-card-header>  
+</ion-card>
+<ion-card>
+  <ion-card-header>     
+    <img src="./assets/icon/import.png"/>
+    <ion-button  (click)="importer ()"   color="light" expand="full" ><ion-icon name="cloud-upload"  ></ion-icon> Importer</ion-button>
+  </ion-card-header>    
+</ion-card>
+
+</ion-content>  

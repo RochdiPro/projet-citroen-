@@ -1,0 +1,17 @@
+ 
+<ion-content [fullscreen]="true" style="text-align: center;"  > 
+ 
+  <img src="./assets/icon/logo.png" style="margin-top: 10% ; margin-bottom: 10%; ">
+
+ 
+ 
+  <ion-item style="text-align: center;">
+    <ion-label color="primary"> Mot de passe </ion-label>
+    <ion-input  #inputpwd type="password" [(ngModel)]="pwd" text-right id="pwd" placeholder="" autofocus="true"  ></ion-input>
+  </ion-item>
+  
+  <ion-button  (click)="cnx()"   color="primary" expand="full" ><ion-icon name="navigate-outline"  ></ion-icon> Connecter </ion-button>    
+
+ 
+</ion-content>   
+ 
